@@ -42,7 +42,7 @@ export async function getContact(id: string | null = null) {
   return contact ?? null
 }
 
-export async function updateContact(id: string, updates: ContactType) {
+export async function updateContact(id: string, updates: Partial<ContactType>) {
   await fakeNetwork()
   let contacts: Contacts | null = await localforage.getItem('contacts')
   let contact = contacts?.find((contact) => contact.id === id)

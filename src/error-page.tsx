@@ -7,7 +7,7 @@ export default function ErrorPage() {
   return (
     <div id="error-page">
       <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <p>에러페이지 입니다.</p>
       <p>
         <i>{error.statusText || error.message}</i>
       </p>
